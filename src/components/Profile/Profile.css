@@ -1,0 +1,244 @@
+.profile-wrapper {
+    display: grid;
+    grid-template-columns: 240px 310px 150px;
+    grid-template-rows: 290px 135px 135px 60px;
+}
+
+.info-text {
+    width: 100%;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #222228;  
+    line-height: 2px;
+}
+
+.info-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.info-header {
+    font-weight: bold;
+    padding-top: 16px;
+}
+
+/* LEFT PANEL */
+.left-panel {
+    /* width: 240px;
+    height: 590px; */
+    grid-area: 1 / 1 / span 4 / span 1;
+    border-right: solid 1px #bdc7f5;
+}
+
+.profile-image-wrapper .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 24px 70px 25px;
+    object-fit: cover;
+}
+
+.profile-text {
+    width: 100%;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #222228;  
+    margin: 0;
+}
+
+.profile-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.profile-header {
+    font-weight: bold;
+    padding-top: 16px;
+}
+
+.profile-insights {
+    margin: 32px 75px auto;
+}
+
+.insights-image {
+    width: 90px;
+}
+
+/* RIGHT TOP PANEL */
+.right-top-panel {
+    grid-area: 1 / 2 / span 1 / span 2;
+    border-bottom: solid 1px #bdc7f5;
+    padding: 30px 32px 0px;
+}
+
+.info-list {
+    margin-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-width: 0;
+    /* TODO: doesn't work */
+}
+
+.info-email {
+    color: #3857e0;
+    padding-top: 20px;
+}
+
+.info-phone {
+    font-weight: bold;
+}
+
+.blue-button-wrapper {
+    grid-area: 1 / 3;
+    padding: 24px 20px 0px 0px;
+    border-bottom: solid 1px #bdc7f5;
+}
+
+.blue-button {
+    padding: 10px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #3857e0;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    float: right;
+    border: 0px;
+}
+
+/* MATCHES PANEL */
+.matches-panel {
+    grid-area: 2 / 2 / span 1 / span 2;
+    border-bottom: solid 1px #bdc7f5;
+    padding: 30px 32px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    /* TODO: doesn't work */
+}
+
+.saved-matches-panel {
+    grid-area: 3 / 2 / span 1 / span 2;
+    border-bottom: solid 1px #bdc7f5;
+    padding: 30px 32px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    /* TODO: doesn't work */
+}
+
+.matches-scroll {
+    margin-top: 30px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+/* TODO: show scroll bar? */
+
+.match-scroll-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 24px;
+    border-radius: 50%;
+}
+
+/* HISTORY PANEL */
+.history-panel {
+    grid-area: 3 / 2 / span 1 / span 2;
+    border-bottom: solid 1px #bdc7f5;
+    padding: 30px 32px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    /* TODO: doesn't work */
+}
+
+/* QUESTIONS PANEL */
+.questions-panel {
+    grid-area: 4 / 2 / span 1 / span 2;
+    padding: 30px 32px 0px;
+}
+
+.questions-list {
+    margin-top: 30px;
+    height: 100px;
+    overflow: auto;
+}
+
+.questions-text {
+    width: 100%;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #222228;  
+    line-height: normal;
+}
+
+/* GAMES PANEL */
+.games-panel {
+    grid-area: 2 / 2 / span 2 / span 2;
+    padding: 30px 32px 0px;
+    /* TODO: doesn't work */
+}
+
+.games-list {
+    margin-top: 30px;
+}
+
+.games-text {
+    width: 100%;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #3857e0;  
+    line-height: normal;
+}
+
+/* TEXT BUTTON */
+.text-button-wrapper {
+    padding: 24px 20px 0px 0px;
+}
+
+.text-button {
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #3857e0 !important;
+    cursor: pointer;
+    float: right;
+}
+
+.text-button-matches {
+    grid-area: 2 / 3;
+}
+
+.text-button-history {
+    grid-area: 3 / 3;
+}
+
+.text-button-questions {
+    grid-area: 4 / 3;
+}
+
+/* CLOSE BUTTON */
+.close-button-wrapper {
+    padding: 16px 16px 0 0;
+    grid-area: 1 / 3;
+}

@@ -1,0 +1,111 @@
+.match-text-wrapper {
+    padding-top: 30px;
+}
+
+.match-grid {
+    display: grid;
+    grid-template-columns: 160px 380px 160px;
+    grid-template-rows: 80px 380px 100px;
+}
+
+.match-text {
+    font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #222228;
+}
+
+.outermost-circle {
+    height: 380px;
+    width: 380px;
+    border: solid 1px #7b8fea;
+    background-color: #f2f4fd;
+    border-radius: 50%;
+    grid-area: 2 / 2;
+}
+
+.middle-circle {
+    width: 200px;
+    height: 200px;
+    background-color: #d3daf8;
+    border-radius: 50%;
+    grid-area: 2 / 2;
+    margin: 90px auto
+}
+
+.innermost-circle {
+    width: 64px;
+    height: 64px;
+    background-color: #3857e0;
+    border-radius: 50%;
+    grid-area: 2 / 2;
+    margin: 158px auto;
+    cursor: pointer;
+}
+
+.icon-reload {
+    width: 32px;
+    object-fit: contain;
+    grid-area: 2 / 2;
+    margin: 175px auto;
+    cursor: pointer;
+}
+
+.match-images-wrapper {
+    grid-area: 1 / 1 / span 3 / span 3;
+}
+
+.match-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding: 0;
+    box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.match-img:hover {
+    width: 106px;
+    height: 106px;
+    border: solid 3px #3857e0;
+}
+
+#match1 { margin: 35px 300px auto; }
+#match2 { margin: 150px 120px auto; }
+#match3 { margin: 150px 480px auto; }
+#match4 { margin: 320px 120px auto; }
+#match5 { margin: 320px 480px auto; }
+#match6 { margin: 415px 300px auto; }
+
+#match1:hover { margin: 32px 297px auto; }
+#match2:hover { margin: 147px 117px auto; }
+#match3:hover { margin: 147px 477px auto; }
+#match4:hover { margin: 317px 117px auto; }
+#match5:hover { margin: 317px 477px auto; }
+#match6:hover { margin: 412px 297px auto; }
+
+/* Source: https://css-tricks.com/star-ratings/ */
+/* reverse order of characters to use sibling combinators */
+.rating {
+    color: yellow;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+  
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+  
+.rating > span:hover:before
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+}
+  
